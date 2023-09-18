@@ -1,0 +1,94 @@
+section#news {
+  
+}
+section#news div.wrap {
+  max-width: 1200px;
+}
+section#news div.wrap h2 {
+  
+}
+section#news div.wrap article {
+  margin-top: 20px;
+  max-width: 1200px;
+  margin-bottom: 30px;
+}
+section#news div.wrap article a {
+  display: grid;
+  grid-template-columns: 100px 900px 120px;
+  grid-template-rows: auto auto auto;
+  row-gap: 15px;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  transition: all 0.5s;
+}
+section#news div.wrap article a:hover {
+  border-color: #1c9ad6;
+}
+section#news div.wrap article a h3 {
+  order: 2;
+  display: flex;
+  align-items: center;
+}
+section#news div.wrap article a h3::before {
+  content: "공지";
+  color: #1c9ad6;
+  font-size: 15px;
+  border: 1px solid;
+  text-align: center;
+  padding: 5px 10px;
+  margin-right: 15px;
+}
+section#news div.wrap article a p {
+  order: 4;
+  overflow:hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+section#news div.wrap article a time {
+  order: 1;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  color: #ccc;
+  transition: all 0.5s;
+}
+section#news div.wrap article a:hover time {
+  color: #1c9ad6;
+}
+section#news div.wrap article a time span {
+  font-size: 45px;
+}
+section#news div.wrap article a span.morecir {
+  order: 3;
+  transform: translateY(50%);
+  transition: all 0.5s;
+}
+section#news div.wrap article a:hover span.morecir {
+  border-color:#1c9ad6; 
+}
+section#news div.wrap article a span.morecir:before {
+  transition: all 0.5s;
+}
+section#news div.wrap article a:hover span.morecir:before {
+  border-color:#1c9ad6; 
+}
+section#news div.wrap a.newslist {
+  border: 1px solid;
+  display: block;
+  width: 80px;
+  line-height: 3;
+  text-align: center;
+}
+section#news div.wrap a.newslist::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url(../img/menu.svg);
+  background-size: cover;
+  vertical-align: -4px;
+  margin-right: 4px;
+}

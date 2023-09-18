@@ -1,0 +1,97 @@
+section#recor {
+  margin-top: -150px;
+}
+section#recor div.wrap {
+  max-width: 1200px;
+}
+section#recor div.wrap article {
+  width: calc(100% / 2);
+  /*! border: 1px solid; */
+}
+section#recor div.wrap article.recruit {
+  
+  position: relative;
+}
+section#recor div.wrap article.recruit::before {
+  content: "";
+  background-image: url(../img/recruit.png);
+  width: 323px;
+  height: 769px;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+section#recor div.wrap article.recruit::after {
+  content: "";
+  width: 100%;
+  height: calc(100% - 395px);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255,255,255,0.9);
+}
+section#recor div.wrap article.recruit hgroup {
+  
+}
+section#recor div.wrap article.recruit hgroup h2 {
+  background-color: #ddd;
+  padding: 180px 0;
+  padding-left: 100px;
+  color: white;
+}
+section#recor div.wrap article.recruit hgroup h3 {
+  margin-left: 100px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+section#recor div.wrap article.recruit>*:not(hgroup) {
+  margin-left: 100px;
+}
+section#recor div.wrap article.recruit p {
+  line-height: 1.8;
+  position: relative;
+  z-index: 1;
+  color: black;
+}
+section#recor div.wrap article.recruit a.morecir {
+  margin-bottom: 100px;
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
+}
+section#recor div.wrap article.corporate {
+  gap: 20px;
+  background-image: url(../img/corporate.jpg);
+  background-size: cover;
+  position: relative;
+}
+section#recor div.wrap article.corporate::before {
+  content: "";
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  position: absolute;
+  border: 2px solid white;
+  top: 20px;
+  left: 20px;
+}
+section#recor div.wrap article.corporate hgroup {
+  flex-direction: column-reverse;
+  gap: 20px;
+  color: white;
+}
+section#recor div.wrap article.corporate hgroup h2 {
+  gap: 20px;
+}
+section#recor div.wrap article.corporate hgroup h2 span {
+  
+}
+section#recor div.wrap article.corporate hgroup h3 {
+  
+}
+section#recor div.wrap article.corporate a.morecir {
+  color: white;
+  position: relative;
+}

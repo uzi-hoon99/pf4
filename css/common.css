@@ -1,0 +1,180 @@
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.width-full{
+  width: 0 auto;
+}
+
+.height-full{
+  height: 100%;
+}
+
+.wrap{
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.hide{ /* 안보이게 */
+  display: none;
+}
+
+.rbox{
+  width: 300px;
+  height: 300px;
+  background-color: #eee;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.bgimg{
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position-x: 85%;
+  background-position-y: 15%;
+}
+
+.padding50{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.padding100{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.paddingT50{
+  padding-top: 50px;
+}
+
+.paddingT100{
+  padding-top: 100px;
+}
+
+.paddingB50{
+  padding-bottom: 50px;
+}
+
+.paddingB100{
+  padding-bottom: 100px;
+}
+
+.marginT50{
+  margin-top: 50px;
+}
+
+.margin50{
+  margin: 50px;
+}
+
+.marginT100{
+  margin-top: 100px;
+}
+
+.marginB50{
+  margin-bottom: 50px;
+}
+
+.marginB100{
+  margin-bottom: 100px;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-center{
+  justify-content: center;
+}
+
+.flex-between{
+  justify-content: space-between;
+}
+
+.flex-align-center{
+  align-items: center;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.h1{
+  font-size: 55px;
+}
+
+.h2{
+  font-size: 45px;
+}
+
+.h3{
+  font-size: 35px;
+}
+
+.h4{
+  font-size: 25px;
+}
+
+.h5{
+  font-size: 20px;
+}
+
+.p{
+  font-size: 14px;
+  line-height: 1.6;
+  color: #9a9a9a;
+}
+
+.block{
+  display: block;
+}
+
+.more{
+  border: 1px solid;
+  display: inline-block;
+  width: 160px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+}
+.morecir{
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.morecir::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  transform: translateX(-2px) rotate(45deg);
+}
+.ham {
+  font-size: 0;
+  width: 21px;
+  height: 16px;
+  display: flex;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  box-sizing: border-box;
+  align-items: center;
+}
+.ham::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: white;
+}

@@ -1,0 +1,127 @@
+section#business div.wrap {
+  padding-top: 150px;
+}
+section#business div.wrap h2 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section#business div.wrap article {
+  padding: 100px 0;
+  position: relative;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+section#business div.wrap article:nth-of-type(1) {
+  z-index: 3;
+}
+section#business div.wrap article:nth-of-type(1)::after {
+  content: "";
+  background-image: url(../img/busi1.jpg);
+  width: 700px;
+  height: 700px;
+  display: block;
+  position: absolute;
+  top: -250px;
+  right: 0px;
+  background-size: cover;
+  background-position: center;
+}
+section#business div.wrap article:nth-of-type(2) {
+  box-sizing: border-box;
+  padding: 200px 0;
+  padding-left: 60%;
+}
+section#business div.wrap article:nth-of-type(2)::before {
+  content: "";
+  background-image: url(../img/busi2.jpg);
+  width: 600px;
+  height: 700px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-size: cover;
+  background-position: center;
+  z-index: 3;
+}
+section#business div.wrap article:nth-of-type(2)::after {
+  content: "";
+  background-image: url(../img/busi3.jpg);
+  width: 900px;
+  height: 1000px;
+  display: block;
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+section#business div.wrap article:nth-of-type(3) {
+  background-image: url(../img/busi4.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 200px 0;
+  padding-left: calc((100% - 1200px) / 2);
+}
+section#business div.wrap article h3 {
+  position: relative;
+  z-index: 4;
+}
+section#business div.wrap article h3 span {
+  margin: 20px 0;
+}
+section#business div.wrap article p {
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 4;
+}
+section#business div.wrap article:nth-of-type(n+2),section#business div.wrap article:nth-of-type(n+2) p,section#business div.wrap article:nth-of-type(n+2) a {
+  color: white;
+}
+section#business div.wrap article a {
+  position: relative;
+  z-index: 2;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+section#business div.wrap article a:hover {
+  color: white;
+  border-color: black;
+}
+section#business div.wrap article:nth-of-type(n+2) a:hover {
+  color: black;
+  border-color: white;
+}
+section#business div.wrap article a::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  display: block;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+  transform: skewX(-30deg);
+  transform-origin: 0 0;
+  z-index: -1;
+}section#business div.wrap article:nth-of-type(n+2) a::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  display: block;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+  transform: skewX(-30deg);
+  transform-origin: 0 0;
+  z-index: -1;
+}
+section#business div.wrap article a:hover::after {
+  width: 115%;
+}

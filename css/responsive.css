@@ -1,0 +1,398 @@
+@media screen and (max-width:1140px){
+  header{
+    top: 0;
+    animation: unset;
+  }
+  header div.wrap{
+    background-color: transparent;
+    width: 100%;
+    animation: unset;
+    height: auto;
+  }
+  header div.wrap nav {
+    height: 50px;
+  }
+  header div.wrap nav a.ham {
+    display: flex;
+  }
+  header div.wrap nav h1 {
+    font-size: 15px;
+  }
+  header div.wrap nav h1 a{
+    color: white;
+  }
+  header div.wrap nav h1 a span{
+    background-image: url(../img/wkai.png);
+    width: 34px;
+    height: 21px;
+    margin-left: 5px;
+  }
+  header div.wrap nav ul.gnb{
+    display: none;
+  }
+  header div.wrap nav > div:nth-of-type(1){
+    display: none;
+  }
+  
+  /* 타이틀 */
+  
+  div#title {
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+  }
+  div#title div.wrap {
+    width: 100%;
+  }
+  .wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+  div#title div.wrap hgroup h2 {
+    font-size: 15px;
+  }
+  div#title div.wrap hgroup h3 { 
+    font-size: 30px;
+  }
+  div#title div.wrap a.scroll {
+    bottom: 15px;
+    width: 50px;
+    height: 50px;
+  }
+  div#title div.wrap a.scroll span {
+    width: 2px;
+    height: 2px;
+  }
+  div#title div.wrap a.scroll::before {
+    border-left: 2px solid white;
+    height: 15px;
+  }
+  div#title div.wrap a.scroll::after {
+    width: 8px;
+    height: 8px;
+    margin-top: -12px;
+    border: 2px solid white;
+    border-left-color: transparent;
+    border-top-color: transparent;
+  }
+  .paddingT100{
+    padding-top: 20px;
+  }
+  .paddingB100 {
+    padding-bottom: 20px;
+  }
+  .marginB50{
+    margin-bottom: 15px;
+  }
+  
+  /* 메인 비지니스 */
+  section#business div.wrap {
+    padding-top: 50px;
+    width: 100%;
+  }
+  section#business div.wrap h2 {
+    text-align: center;
+  }
+  section#business div.wrap article {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  section#business div.wrap article h3 {
+    order: 2;
+  }
+  section#business div.wrap article p {
+    order: 3;
+  }
+  section#business div.wrap article a {
+    order: 4;
+  }
+  section#business div.wrap article:nth-of-type(1)::after {
+    position: static;
+    order: 1;
+    width: 100%;
+    height: 50vw;
+  }
+  section#business div.wrap article:nth-of-type(2) {
+    color: black;
+    padding: 50px 0;
+  }
+  section#business div.wrap article:nth-of-type(2) p {
+    color: gray;
+  }
+  section#business div.wrap article:nth-of-type(2) a {
+    color: black;
+  }
+  section#business div.wrap article:nth-of-type(2)::before {
+    position: static;
+    width: 100%;
+    height: 60vw;
+  }
+  section#business div.wrap article:nth-of-type(2)::after {
+    display: none;
+  }
+  section#business div.wrap article:nth-of-type(3) {
+    padding: 15vw 0;
+    padding-left: 15px;
+  }
+  /*  그린  */
+  section#green div.wrap {
+    width: 100%;
+  }
+  section#green div.wrap h2 {
+    font-size: 7vw;
+    margin-bottom: 7vw;
+  }
+  section#green div.wrap ul {
+    flex-direction: column;
+  }
+  section#green div.wrap ul li {
+    width: 100%;
+  }
+  section#green div.wrap ul li::before {
+    height: 60vw;
+  }
+  section#green div.wrap a.siteview {
+    margin-left: 0;
+    transform: scale(0.7);
+    transform-origin: 0;
+  }
+  /* 어바웃 */
+  section#about div.wrap {
+    width: 100%;
+  }
+  section#about div.wrap ul {
+    flex-direction: column;
+    margin-bottom: 20px;
+    row-gap: 30px;
+  }
+  section#about div.wrap ul li {
+    width: 100%;
+  }
+  section#about div.wrap ul li:nth-child(2) {
+    border: none;
+  }
+  section#about div.wrap ul li h3{
+    line-height: 2;
+  }
+  /* recruit */
+  section#recor {
+    margin-top: 0;
+  }
+  section#recor div.wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  section#recor div.wrap article {
+    width: 100%;
+  }
+  section#office div.wrap ul li {
+    background-size: cover;
+  }
+  section#recor div.wrap article.recruit a.morecir {
+    
+  margin: 5vw 0;
+  margin-left: 5vw;
+  }
+  section#recor div.wrap article.recruit::before{
+    width: 40vw;
+    height: 95vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  section#recor div.wrap article.recruit::after{
+    height: calc((100% - 40vw) - 35px);
+  }
+  section#recor div.wrap article.recruit hgroup h2 {
+    padding: 20vw 0;
+    padding-left: 5vw;
+  }
+  section#recor div.wrap article.recruit hgroup h3 {
+    margin: 5vw 0;
+    margin-left: 5vw;
+  }
+  section#recor div.wrap article.recruit > :not(hgroup) {
+    margin-left: 5vw;
+  }
+  section#recor div.wrap article.corporate {
+    height: 75vw;
+  }
+  /* 뉴스 */
+  section#news div.wrap {
+    width: 100%;
+  }
+  section#news div.wrap article {
+  width: 100%;
+  }
+  section#news div.wrap article a {
+    display: flex;
+    flex-direction: column;
+  }
+  section#news div.wrap article a h3 {
+    order: 1;
+  }
+  section#news div.wrap article a p {
+    order: 2
+  }
+  section#news div.wrap article a time {
+    order: 3;
+    flex-direction: row;
+  }
+  section#news div.wrap article a time span {
+    font-size: inherit;
+  }
+  section#news div.wrap article a span.morecir {
+    display: none;
+  }
+  /* 주가 */
+  section#stockir div.wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  section#stockir div.wrap article {
+    width: 100%;
+  }
+  section#stockir div.wrap article.stock {
+    padding: 0;
+    border: none;
+  }
+  section#stockir div.wrap article.ir {
+    padding: 0;
+  }
+  /* 오피스 */
+  section#office div.wrap ul {
+    height: 30vw;
+  }
+  section#office div.wrap ul li:hover {
+    background-size: cover;
+  }
+  /* footer */
+  footer div.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+  }
+  footer div.wrap ul.fnb {
+    order: 1;
+  }
+  footer div.wrap address {
+    order: 3;
+    text-align: center;
+  }
+  footer div.wrap p.copyright {
+    order: 4;
+    text-align: center;
+  }
+  footer div.wrap div.corp {
+    order: 2;
+    width: 100%;
+  }
+  footer div.wrap div.corp ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  footer div.wrap div.corp ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:1600px){
+  header{
+    
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  section#business div.wrap {
+    padding-top: 10vw
+  }
+  .paddingT100 {
+    padding-top: 6vw;
+  }
+  .paddingB100 {
+    padding-bottom: 6vw;
+  }
+  .paddingT50 {
+    padding-top: 3vw;
+  }
+  main section:not(#office) .wrap {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  section#business div.wrap article{
+    
+  padding: 6vw 0;
+  }
+  section#business div.wrap article:nth-of-type(1)::after {
+    right: 0;
+    width: 50vw;
+    height: 50vw;
+  }
+  section#business div.wrap article:nth-of-type(2) {
+    padding-top: 12vw;
+    padding-bottom: 12vw;
+  }
+  section#business div.wrap article:nth-of-type(2)::before {
+    
+  width: 45vw;
+  height: 55vw;
+  top: -5vw;
+  }
+  section#business div.wrap article:nth-of-type(2)::after {
+    
+  width: 55vw;
+  height: 60vw;
+  right: 0;
+  top: -10vw;
+  }
+  section#business div.wrap article:nth-of-type(3) {
+    
+  padding: 10vw 0;
+  padding-left: 40px;
+  }
+  section#recor div.wrap article.recruit::before {
+    
+  width: 28vw;
+  height: 67vw;
+  }
+  section#recor div.wrap article.recruit hgroup h2 {
+    
+  padding: 15vw 0;
+  padding-left: 5vw;
+  }
+  section#recor div.wrap article.recruit hgroup h3 {
+    
+  margin-left: 5vw;
+  margin-top: 5vw;
+  margin-bottom: 2vw;
+  }
+  section#recor div.wrap article.recruit p {
+    margin-left: 5vw;
+  }
+  section#recor div.wrap article.recruit a.morecir {
+    margin-left: 5vw;
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+  }
+  section#recor div.wrap article.recruit::after {
+    
+  height: calc(100% - 33vw);
+  }
+  section#office div.wrap ul {
+    height: 20vw;
+  }
+  footer div.wrap {
+    padding: 3vw 40px;
+  }
+  footer div.wrap div.corp ul {
+    transform: scale(0.8)
+  }
+}
+  

@@ -1,0 +1,131 @@
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 150;
+  top: 20px;
+  animation-name: headerdown;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+@keyframes headerdown {
+  0%{
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+header div.wrap {
+  background-color: white;
+  box-sizing: border-box;
+  padding-right: 20px;
+  height: 100px;
+  position: relative;
+  animation-name: widthfull;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes widthfull {
+  100%{
+    width: 100%;
+  }
+}
+header div.wrap nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+header div.wrap nav h1 {
+  height: 100%;
+}
+header div.wrap nav h1 a {
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  height: 100%;
+  color: #1c9ad6;
+}
+header div.wrap nav h1 a span {
+  background-image: url(../img/kai.png);
+  font-size: 0;
+  background-size: contain;
+  width: 68px;
+  height: 42px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-left: 15px;
+  vertical-align: middle;
+  background-position: center;
+}
+header div.wrap nav ul.gnb {
+  
+}
+header div.wrap nav ul.gnb li {
+  
+}
+header div.wrap nav ul.gnb li a {
+  padding: 0 15px;
+  display: block;
+  line-height: 3;
+  transition: all 0.5s;
+  /*! border-top: 2px solid transparent; */
+  font-size: 17px;
+  font-weight: 500;
+}
+header div.wrap nav ul.gnb li a:hover{
+  /*! background-color: darkgray; */
+  /*! border-top: 2px solid gray; */
+  color: #1c9ad6;
+}
+header div.wrap nav > div:nth-of-type(1) {
+  gap: 20px;
+  font-size: 13px;
+  align-items: center;
+}
+header div.wrap nav div.flex ul.lang {
+  
+}
+header div.wrap nav div.flex ul.lang li {
+  
+}
+header div.wrap nav div.flex ul.lang li a {
+  line-height: 2;
+  padding: 0 10px;
+  display: block;
+  position: relative;
+  font-weight: 300;
+  transition: all 0.5s;
+}
+header div.wrap nav div.flex ul.lang li a:hover{
+  background-color: #eee;
+}
+header div.wrap nav div.flex ul.lang li:nth-child(-n + 2) a::after {
+  content: "";
+  border-right: 1px solid #666;
+  height: 8px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 3px);
+}
+header div.wrap nav div.flex form.search {
+  
+}
+header div.wrap nav div.flex form.search button {
+  background-image: url(../img/search.svg);
+  font-size: 0;
+  background-size: 100%;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+header div.wrap nav a.ham {
+  display: none;
+}

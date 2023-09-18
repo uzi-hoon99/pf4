@@ -1,0 +1,46 @@
+section#office {
+  
+  width: 100%;
+}
+section#office div.wrap {
+  max-width: 100%;
+  padding: 0;
+}
+section#office div.wrap h2 {
+  
+}
+section#office div.wrap ul {
+  height: 325px;
+}
+section#office div.wrap ul li {
+  width: 50%;
+  background-position: center;
+  background-size: cover;
+}
+section#office div.wrap ul li:nth-child(1) {
+ background-image: url(../img/office.jpg);
+}
+section#office div.wrap ul li:nth-child(2) {
+ background-image: url(../img/factory.jpg);
+}
+section#office div.wrap ul li a {
+  color: white;
+  height: 100%;
+}
+section#office div.wrap ul li a hgroup {
+  text-align: center;
+}
+section#office div.wrap ul li a hgroup h3 {
+  
+}
+section#office div.wrap ul li a hgroup h4 {
+  
+  line-height: 2;
+}
+section#office div.wrap ul li a span.arrow {
+  font-size: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/rarrow.svg);
+  background-size: contain;
+}

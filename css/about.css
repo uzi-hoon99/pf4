@@ -1,0 +1,38 @@
+section#about {
+  
+}
+section#about div.wrap {
+  
+  background-color: #eee;
+}
+section#about div.wrap h2 {
+  
+}
+section#about div.wrap ul {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+section#about div.wrap ul li {
+  width: calc(100% / 3);
+}
+section#about div.wrap ul li:nth-child(2) {
+  border-left: 1px solid darkgray;
+  border-right: 1px solid darkgray;
+}
+section#about div.wrap ul li svg path {
+  transition: all 1s;
+}
+section#about div.wrap ul li:hover svg path {
+  stroke: red;
+  stroke-width: 5;
+}
+section#about div.wrap ul li h3 {
+  line-height: 4;
+}
+section#about div.wrap ul li p {
+  
+}
+section#about div.wrap ul li p span {
+  
+}
