@@ -1,6 +1,9 @@
 # 프로젝트 명 : 카이 클론 코딩
 https://uzi-hoon99.github.io/pf4/
 
+## 원본 사이트
+https://www.ka.co.kr/
+
 ## 기술 스텍
 - HTML
 - CSS
